@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#065f46">
+<title>المعين البيداغوجي | العلوم الإسلامية - ثانوي</title>
+<style>
+:root{--bg:#f0fdf4;--bg2:#f8fafc;--surf:#fff;--alt:#f8fafc;--txt:#0f172a;--mut:#475569;--bdr:#cbd5e1;--line:#6ee7b7;--pri:#065f46;--pri2:#059669;--soft:#d1fae5;--gold:#b45309;--gsoft:#fef3c7;--shd:0 4px 16px rgba(6,95,70,.08)}
+body.dark{--bg:#090f1a;--bg2:#0b1120;--surf:#151e2e;--alt:#0f172a;--txt:#f1f5f9;--mut:#94a3b8;--bdr:#334155;--line:#047857;--pri:#10b981;--pri2:#34d399;--soft:rgba(16,185,129,.15);--gold:#fbbf24;--gsoft:rgba(251,191,36,.15)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Tajawal','Segoe UI',Tahoma,sans-serif;color:var(--txt);line-height:1.65;background:linear-gradient(180deg,var(--bg),var(--bg2));padding-bottom:82px;min-height:100vh}
+header{background:linear-gradient(135deg,#064e3b,#047857 60%,#0f766e);color:#fff;padding:13px 15px;position:sticky;top:0;z-index:40;border-bottom:3px solid #f59e0b;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.wrap{max-width:1160px;margin:0 auto}
+.htop{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.htop h1{font-size:1.1rem;font-weight:800}.htop p{font-size:.76rem;opacity:.9}
+.ibtn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:9px;padding:6px 10px;font-family:inherit;font-weight:700;cursor:pointer}
+.sbox{position:relative}.sbox input{width:100%;padding:8px 34px 8px 12px;border-radius:10px;border:none;outline:none;background:rgba(255,255,255,.95);color:#0f172a;font-family:inherit;font-size:.87rem}
+body.dark .sbox input{background:#0f172a;color:#f8fafc;border:1px solid #334155}
+.sbox span{position:absolute;right:10px;top:50%;transform:translateY(-50%)}
+.main{max-width:1160px;margin:14px auto;padding:0 12px}
+.tab{display:none;animation:fi .18s ease}.tab.active{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.card{background:var(--surf);border:1px solid var(--bdr);border-radius:14px;padding:14px;box-shadow:var(--shd);margin-bottom:14px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:11px;padding-bottom:8px;border-bottom:1px solid var(--bdr)}
+.head h2{font-size:1.01rem;font-weight:800;color:var(--pri)}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{border:1px solid var(--bdr);background:var(--alt);color:var(--mut);padding:5px 11px;border-radius:999px;font-family:inherit;font-size:.78rem;font-weight:700;cursor:pointer}
+.pill.active,.pill:hover{background:var(--pri);color:#fff;border-color:var(--pri)}
+.dbox{background:var(--alt);border:1px solid var(--bdr);border-radius:12px;padding:9px;margin-bottom:12px;overflow-x:auto;text-align:center}
+.tgrid{display:grid;grid-template-columns:1.2fr .9fr;gap:14px;align-items:start}
+.tul,.tsub{list-style:none}.tsub{padding-right:18px;margin-right:9px;border-right:2px dashed var(--line)}.tsub.col{display:none}
+.tli{position:relative;margin:6px 0}.tsub>.tli::before{content:"";position:absolute;right:-18px;top:17px;width:14px;height:2px;background:var(--line)}
+.ncard{display:flex;align-items:center;gap:7px;padding:8px 10px;border-radius:10px;border:1px solid var(--bdr);background:var(--alt);cursor:pointer}
+.ncard:hover{border-color:var(--pri)}.ncard.sel{background:var(--soft);border-color:var(--pri)}
+.ncard.l0{background:var(--surf);border-right:5px solid var(--pri);font-weight:800}
+.tbtn{width:22px;height:22px;min-width:22px;border-radius:6px;border:1px solid var(--bdr);background:var(--surf);color:var(--txt);font-weight:800;cursor:pointer}
+.dot{width:8px;height:8px;min-width:8px;border-radius:50%;background:var(--pri2);margin:0 6px}
+.nmeta{flex:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px}
+.ntit{font-weight:700;font-size:.88rem}.ntag{font-size:.7rem;padding:2px 7px;border-radius:999px;background:var(--gsoft);color:var(--gold);font-weight:700}
+.insp{position:sticky;top:106px;max-height:calc(100vh - 188px);overflow-y:auto}
+.ibox{background:var(--alt);border:1px solid var(--bdr);border-radius:10px;padding:8px 10px;margin-bottom:8px}
+.ibox h4{font-size:.79rem;color:var(--pri);margin-bottom:2px}.ibox p{font-size:.86rem}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:11px}
+.dcard{background:var(--surf);border:1px solid var(--bdr);border-top:4px solid var(--pri);border-radius:12px;padding:12px;box-shadow:var(--shd)}
+.dcard h3{font-size:.95rem;color:var(--pri);margin-bottom:8px}
+.vsi{background:var(--alt);border-right:4px solid #059669;padding:6px 9px;border-radius:7px;font-size:.84rem;margin-bottom:6px}
+.vsi.b{border-right-color:#d97706}.vsi.c{border-right-color:#2563eb}
+.vrule{padding:6px 9px;background:var(--gsoft);border-radius:7px;font-size:.81rem;font-weight:700}
+.blayout{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.play{cursor:pointer}.play:hover{opacity:.88}
+.vchip{display:inline-block;margin:2px 0 2px 4px;padding:2px 8px;border-radius:6px;background:var(--soft);color:var(--pri);font-size:.78rem;font-weight:700}
+.tbl{width:100%;border-collapse:collapse;font-size:.83rem;margin:7px 0}
+.tbl th,.tbl td{border:1px solid var(--bdr);padding:6px 8px;text-align:right;vertical-align:top}
+.tbl th{background:var(--soft);color:var(--pri);font-weight:800}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:10px}
+.fgrid select,.fgrid input{width:100%;padding:8px 9px;border-radius:9px;border:1px solid var(--bdr);background:var(--alt);color:var(--txt);font-family:inherit;font-size:.85rem}
+.btn{background:var(--pri);color:#fff;border:none;border-radius:9px;padding:8px 13px;font-family:inherit;font-size:.84rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.bword{background:#1d4ed8}.bpdf{background:#be123c}
+.qitem{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;background:var(--alt);border:1px solid var(--bdr);border-radius:9px;margin-bottom:6px;font-size:.85rem}
+.mprev{background:#fff;color:#0f172a;border:1.5px solid #94a3b8;border-radius:11px;padding:16px;overflow-x:auto}
+.mprev .tbl th{background:#ecfdf5;color:#065f46;border-color:#334155}.mprev .tbl td{border-color:#334155}
+.dhead{text-align:center;border-bottom:2px solid #065f46;padding-bottom:7px;margin-bottom:10px}
+.dmeta{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:5px 10px;background:#f8fafc;border:1px solid #cbd5e1;padding:8px 10px;border-radius:7px;margin-bottom:10px;font-size:.83rem}
+.sanad{background:#fffbeb;border:1.5px solid #d97706;border-radius:8px;padding:9px 11px;margin:8px 0;font-weight:700}
+nav.bnav{position:fixed;bottom:0;left:0;right:0;background:var(--surf);border-top:1px solid var(--bdr);display:grid;grid-template-columns:repeat(5,1fr);z-index:60;box-shadow:0 -4px 14px rgba(0,0,0,.08)}
+.nitem{border:none;background:transparent;color:var(--mut);padding:7px 2px 8px;font-family:inherit;font-size:.7rem;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}
+.nitem .ico{font-size:1.12rem}.nitem.active{color:var(--pri);background:var(--soft);border-top:3px solid var(--pri)}
+.mclose{display:none}
+@media(max-width:860px){
+.tgrid,.blayout{grid-template-columns:1fr}
+.insp{display:none;position:fixed;inset:auto 0 58px 0;top:auto;max-height:74vh;z-index:80;border-radius:16px 16px 0 0;box-shadow:0 -10px 32px rgba(0,0,0,.3)}
+.insp.open{display:block}
+.mclose{display:inline-block;float:left;padding:3px 9px;border-radius:6px;border:1px solid var(--bdr);background:var(--alt);color:var(--txt);font-family:inherit;font-weight:700}
+}
+mark{background:#fde047;color:#0f172a;padding:0 2px;border-radius:3px}
+#printSheet{display:none}
+@media print{
+@page{size:A4;margin:11mm}
+body{background:#fff!important;color:#000!important;padding:0!important}
+header,.main,nav.bnav{display:none!important}
+#printSheet{display:block!important;width:100%;direction:rtl;font-family:'Tajawal','Arial',sans-serif}
+#printSheet .mprev{border:none;padding:0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="htop">
+      <div>
+        <h1>🕌 المعين البيداغوجي | العلوم الإسلامية (ثانوي)</h1>
+        <p>تشجير المذكرة • الفروقات • هرم بلوم • نماذج 1ثا و2ثا وبكالوريا (Word / PDF)</p>
+      </div>
+      <button class="ibtn" id="darkBtn">🌙</button>
+    </div>
+    <div class="sbox"><span>🔍</span><input id="gSearch" placeholder="ابحث في الشجرة أو الفروقات (الهدف التعلمي، التقويم، الإدماج...)"></div>
+  </div>
+</header>
+
+<main class="main">
+  <!-- 1: TREE -->
+  <section id="tab-tree" class="tab active">
+    <div class="card">
+      <div class="head">
+        <h2>📐 مخطط سيرورة المذكرة والمثلث الديداكتيكي</h2>
+        <div class="pills">
+          <button class="pill" onclick="renderTree(true)">توسيع الكل</button>
+          <button class="pill" onclick="renderTree(false)">طي الكل</button>
+        </div>
+      </div>
+      <div class="dbox">
+        <svg viewBox="0 0 840 190" width="100%" style="max-width:840px;height:auto">
+          <rect x="605" y="8" width="225" height="174" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+          <text x="717" y="27" text-anchor="middle" font-size="12" font-weight="800" fill="#065f46">المثلث الديداكتيكي</text>
+          <polygon points="717,44 635,152 800,152" fill="none" stroke="#047857" stroke-width="2" stroke-dasharray="4,3"/>
+          <rect x="675" y="35" width="84" height="23" rx="6" fill="#065f46"/><text x="717" y="51" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">المعرفة الشرعية</text>
+          <rect x="752" y="142" width="70" height="23" rx="6" fill="#059669"/><text x="787" y="158" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">الأستاذ</text>
+          <rect x="615" y="142" width="70" height="23" rx="6" fill="#d97706"/><text x="650" y="158" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">المتعلم</text>
+          <text x="776" y="96" text-anchor="middle" font-size="9.5" fill="#065f46">نقل ديداكتيكي</text>
+          <text x="656" y="96" text-anchor="middle" font-size="9.5" fill="#065f46">تمثلات</text>
+          <text x="717" y="175" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b45309">عقد ديداكتيكي</text>
+          <rect x="8" y="8" width="585" height="174" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="300" y="27" text-anchor="middle" font-size="12" font-weight="800" fill="#92400e">سيرورة المذكرة في العلوم الإسلامية (الوضعيات الأربع)</text>
+          <rect x="456" y="43" width="124" height="120" rx="10" fill="#065f46"/><text x="518" y="65" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fde047">1. وضعية الانطلاق</text><text x="518" y="87" text-anchor="middle" font-size="10" fill="#fff">• تقويم تشخيصي</text><text x="518" y="106" text-anchor="middle" font-size="10" fill="#fff">• إثارة التمثلات</text><text x="518" y="125" text-anchor="middle" font-size="10" fill="#fff">• طرح الإشكالية</text><text x="518" y="148" text-anchor="middle" font-size="9.5" fill="#a7f3d0">(5 - 10 د)</text>
+          <rect x="308" y="43" width="132" height="120" rx="10" fill="#047857"/><text x="374" y="65" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fde047">2. بناء التعلمات</text><text x="374" y="87" text-anchor="middle" font-size="10" fill="#fff">• تلاوة السند الشرعي</text><text x="374" y="106" text-anchor="middle" font-size="10" fill="#fff">• الشرح والتحليل</text><text x="374" y="125" text-anchor="middle" font-size="10" fill="#fff">• الاستنباط والربط</text><text x="374" y="148" text-anchor="middle" font-size="9.5" fill="#a7f3d0">(30 - 35 د)</text>
+          <rect x="162" y="43" width="130" height="120" rx="10" fill="#0f766e"/><text x="227" y="65" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fde047">3. الوضعية المهيكلة</text><text x="227" y="87" text-anchor="middle" font-size="10" fill="#fff">• الأحكام والفوائد</text><text x="227" y="106" text-anchor="middle" font-size="10" fill="#fff">• الأثر الكتابي</text><text x="227" y="125" text-anchor="middle" font-size="10" fill="#fff">• تقويم تكويني</text><text x="227" y="148" text-anchor="middle" font-size="9.5" fill="#a7f3d0">(10 د)</text>
+          <rect x="20" y="43" width="126" height="120" rx="10" fill="#b45309"/><text x="83" y="65" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">4. وضعية الإدماج</text><text x="83" y="87" text-anchor="middle" font-size="10" fill="#fff">• تجنيد الموارد</text><text x="83" y="106" text-anchor="middle" font-size="10" fill="#fff">• معالجة إشكال</text><text x="83" y="125" text-anchor="middle" font-size="10" fill="#fff">• ربط بالواقع</text><text x="83" y="148" text-anchor="middle" font-size="9.5" fill="#fde68a">(نهاية الوحدة)</text>
+        </svg>
+      </div>
+      <div class="pills" id="treeFilters" style="margin-bottom:10px"></div>
+      <div class="tgrid">
+        <div><ul class="tul" id="treeRoot"></ul></div>
+        <aside class="card insp" id="insp"><div id="inspBody"></div></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2: DIFFS -->
+  <section id="tab-diff" class="tab">
+    <div class="card">
+      <div class="head"><h2>⚖️ الفروقات الدقيقة بين الألفاظ المتشابهة</h2><span class="ntag">مرجع المذكرة والقسم</span></div>
+      <div class="dgrid" id="diffGrid"></div>
+    </div>
+  </section>
+
+  <!-- 3: BLOOM -->
+  <section id="tab-bloom" class="tab">
+    <div class="card">
+      <div class="head"><h2>🔺 مخطط هرم بلوم المعرفي في العلوم الإسلامية</h2><span class="ntag">اضغط على أي طبقة</span></div>
+      <div class="blayout">
+        <div class="dbox" style="margin:0">
+          <svg viewBox="0 0 420 345" width="100%" style="max-width:410px">
+            <g class="play" onclick="selBloom(5)"><polygon points="210,10 162,65 258,65" fill="#be123c" stroke="#fff" stroke-width="2"/><text x="210" y="52" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">6. التقويم</text></g>
+            <g class="play" onclick="selBloom(4)"><polygon points="160,68 260,68 292,118 128,118" fill="#9333ea" stroke="#fff" stroke-width="2"/><text x="210" y="99" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">5. التركيب (الربط والإبداع)</text></g>
+            <g class="play" onclick="selBloom(3)"><polygon points="126,121 294,121 326,171 94,171" fill="#2563eb" stroke="#fff" stroke-width="2"/><text x="210" y="152" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">4. التحليل (الاستنباط والمقارنة)</text></g>
+            <g class="play" onclick="selBloom(2)"><polygon points="92,174 328,174 360,224 60,224" fill="#0d9488" stroke="#fff" stroke-width="2"/><text x="210" y="205" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">3. التطبيق (توظيف الحكم)</text></g>
+            <g class="play" onclick="selBloom(1)"><polygon points="58,227 362,227 392,277 28,277" fill="#d97706" stroke="#fff" stroke-width="2"/><text x="210" y="258" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">2. الفهم (الشرح والتعليل)</text></g>
+            <g class="play" onclick="selBloom(0)"><polygon points="26,280 394,280 414,332 6,332" fill="#065f46" stroke="#fff" stroke-width="2"/><text x="210" y="312" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">1. التذكر والمعرفة (القاعدة)</text></g>
+          </svg>
+        </div>
+        <div id="bloomCard" class="card" style="margin:0;border-right:5px solid #065f46"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4: EXAM BUILDER -->
+  <section id="tab-exam" class="tab">
+    <div class="card">
+      <div class="head"><h2>📝 بناء الفرض والاختبار وفق هرم بلوم</h2><span class="ntag">الجزء 1 (12ن) + الجزء 2 (08ن)</span></div>
+      <div style="overflow-x:auto">
+        <table class="tbl">
+          <thead><tr><th>مستوى بلوم</th><th>النسبة</th><th>من 20</th><th>أمثلة أسئلة في العلوم الإسلامية</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. التذكر</strong></td><td>20%</td><td>4 ن</td><td>عرّف المصطلح، اذكر الأركان، عرّف براوي الحديث.</td></tr>
+            <tr><td><strong>2. الفهم</strong></td><td>25%</td><td>5 ن</td><td>اشرح الآية، علل التحريم، صنّف الوسيلة القرآنية.</td></tr>
+            <tr><td><strong>3. التطبيق</strong></td><td>20%</td><td>4 ن</td><td>بيّن الحكم الشرعي في معاملة معاصرة مع التعليل.</td></tr>
+            <tr><td><strong>4. التحليل</strong></td><td>15%</td><td>3 ن</td><td>استخرج حكمين وفائدتين، قارن بين الكفالة والتبني.</td></tr>
+            <tr><td><strong>5. التركيب + 6. التقويم</strong></td><td>20%</td><td>4 ن</td><td>ناقش شبهة فكرية، اربط بين العقيدة ومكافحة الانحراف.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="head"><h2>🛠️ صانع مسودة أسئلة (بلوم)</h2><span class="ntag" id="totBadge">المجموع: 0 / 20</span></div>
+      <div class="fgrid">
+        <select id="bPart"><option>الجزء الأول (12ن)</option><option>الجزء الثاني (08ن)</option></select>
+        <select id="bBloom" onchange="updVerbs()">
+          <option value="0">1. التذكر</option><option value="1">2. الفهم</option><option value="2">3. التطبيق</option>
+          <option value="3">4. التحليل</option><option value="4">5. التركيب</option><option value="5">6. التقويم</option>
+        </select>
+        <select id="bVerb"></select>
+        <input id="bCont" placeholder="محتوى السؤال...">
+        <input id="bPts" type="number" min=".5" max="10" step=".5" value="2">
+      </div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px">
+        <button class="btn" onclick="addQ()">➕ إضافة سؤال</button>
+        <button class="pill" onclick="loadSampleQ()">✨ نموذج متوازن</button>
+        <button class="pill" onclick="exportDraftWord()">📘 تحميل المسودة Word</button>
+      </div>
+      <div id="draftList"></div>
+    </div>
+  </section>
+
+  <!-- 5: MODELS -->
+  <section id="tab-models" class="tab">
+    <div class="card">
+      <div class="head"><h2>📄 نماذج المذكرات والفروض (1ثا • 2ثا • بكالوريا)</h2><span class="ntag">تحميل Word و PDF</span></div>
+      <div style="display:grid;gap:8px;margin-bottom:11px">
+        <div class="pills" id="lvlPills">
+          <button class="pill active" onclick="setModLvl('1as',this)">1 ثانوي جذع مشترك</button>
+          <button class="pill" onclick="setModLvl('2as',this)">2 ثانوي جميع الشعب</button>
+          <button class="pill" onclick="setModLvl('3as',this)">3 ثانوي (البكالوريا)</button>
+        </div>
+        <div class="pills" id="typPills">
+          <button class="pill active" onclick="setModTyp('memo',this)">📋 مذكرة بيداغوجية كاملة</button>
+          <button class="pill" onclick="setModTyp('exam',this)">📝 فرض/اختبار وفق بلوم (20/20)</button>
+        </div>
+      </div>
+      <div class="fgrid" style="background:var(--alt);padding:9px;border-radius:10px;border:1px solid var(--bdr)">
+        <input id="mSchool" value="ثانوية الشهيد ...................." oninput="renderModel()" placeholder="اسم الثانوية">
+        <input id="mTeach" value="الأستاذ(ة): ...................." oninput="renderModel()" placeholder="اسم الأستاذ">
+        <input id="mYear" value="2026 / 2027" oninput="renderModel()" placeholder="السنة الدراسية">
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+        <button class="btn bword" onclick="dlWord()">📘 تحميل بصيغة Word (.doc)</button>
+        <button class="btn bpdf" onclick="dlPDF()">📕 حفظ بصيغة PDF / طباعة</button>
+      </div>
+      <div class="mprev" id="modPreview"></div>
+    </div>
+  </section>
+</main>
+
+<div id="printSheet"></div>
+
+<nav class="bnav">
+  <button class="nitem active" onclick="swTab('tree',this)"><span class="ico">🌳</span><span>التشجير</span></button>
+  <button class="nitem" onclick="swTab('diff',this)"><span class="ico">⚖️</span><span>الفروقات</span></button>
+  <button class="nitem" onclick="swTab('bloom',this)"><span class="ico">🔺</span><span>بلوم</span></button>
+  <button class="nitem" onclick="swTab('exam',this)"><span class="ico">🛠️</span><span>صانع فرض</span></button>
+  <button class="nitem" onclick="swTab('models',this)"><span class="ico">📄</span><span>نماذج 1-2-3ثا</span></button>
+</nav>
+
+<script>
+const treeData=[
+  {id:"t1",title:"1. المرجعيات والمقاربات البيداغوجية",tag:"الإطار النظري",
+   def:"المرجعية التربوية المؤطرة لتدريس العلوم الإسلامية بالثانوي (المنهاج، الوثيقة المرافقة، التدرج السنوي).",
+   role:"توجّه اختيارات الأستاذ في التخطيط وصياغة الوضعيات.",
+   ex:"ربط درس العقل في القرآن بمشكلات التقليد والخرافة لدى الشباب.",
+   tip:"المقاربة المعتمدة في الجزائر هي المقاربة بالكفاءات (APC).",
+   ch:[
+     {id:"t1a",title:"المقاربة بالكفاءات في العلوم الإسلامية",tag:"المقاربة المعتمدة",
+      def:"توظيف المعارف الشرعية (آيات، أحاديث، أحكام) لحل مشكلات واقعية وبناء مواقف سلوكية سليمة.",
+      role:"تتحكم في بناء المذكرة من وضعية الانطلاق إلى الإدماج.",
+      ex:"تمييز التلميذ بين المعاملة الربوية والمرابحة الجائزة في الواقع.",
+      tip:"تقوم على 4 مبادئ: البناء، التطبيق، التكرار، والإدماج."},
+     {id:"t1b",title:"النقل الديداكتيكي للعلوم الشرعية",tag:"ديداكتيك المادة",
+      def:"تبسيط المسائل الفقهية والأصولية العالية من أمهات الكتب لتناسب مستوى تلميذ الثانوي.",
+      role:"يُراعى في البطاقة المعرفية للمذكرة وشرح المصطلحات.",
+      ex:"تبسيط أركان القياس ومراتب المقاصد بأمثلة معاصرة واضحة.",
+      tip:"تجنب الخوض في الخلافات الفقهية المعقدة غير المقررة."}
+   ]},
+  {id:"t2",title:"2. هرمية الكفاءات والأهداف",tag:"ديباجة المذكرة",
+   def:"التدرج الهرمي من الكفاءة الشاملة والختامية إلى الكفاءة المرحلية والهدف التعلمي.",
+   role:"تُكتب في البطاقة الفنية أعلى المذكرة.",
+   ex:"الكفاءة الختامية ← الكفاءة المرحلية ← الهدف التعلمي.",
+   tip:"الهدف التعلمي يُصاغ بفعل سلوكي يقوم به المتعلم لا الأستاذ.",
+   ch:[
+     {id:"t2a",title:"الكفاءة الختامية والمرحلية",tag:"السنة / الميدان",
+      def:"الختامية تخص نهاية السنة، والمرحلية تخص نهاية ميدان (القرآن، العقيدة، الفقه، السيرة).",
+      role:"تُستخرج حرفياً من المنهاج والتدرج السنوي.",
+      ex:"3 ثانوي: يقترح حلولاً لمشكلات معاصرة انطلاقاً من مقاصد الشريعة.",
+      tip:"الموارد 3 أنواع: معرفية، مهارية، وقيمية."},
+     {id:"t2b",title:"الهدف التعلمي والهدف الإجرائي",tag:"الحصة والنشاط",
+      def:"الهدف التعلمي غاية الحصة، والإجرائي تفريع سلوكي دقيق قابل للقياس في نشاط واحد.",
+      role:"يوجه الأسئلة الصفية والتقويم التكويني.",
+      ex:"أن يستنبط المتعلم وسائل تثبيت العقيدة من الآيات المقررة.",
+      tip:"الصيغة: أن + فعل مضارع قابل للقياس + المتعلم + المحتوى."},
+     {id:"t2c",title:"المكتسبات القبلية ومؤشر الكفاءة",tag:"التشخيص والتحقق",
+      def:"المكتسبات القبلية معارف التلميذ السابقة، والمؤشر علامة ظاهرية تدل على تحقق الهدف.",
+      role:"تُستحضر المكتسبات في الانطلاق وتُراقب المؤشرات أثناء البناء.",
+      ex:"مؤشر: يفرّق التلميذ بدقة بين الحكم الشرعي والفائدة التربوية.",
+      tip:"الربط بالسابق يضمن بناءً معرفياً متماسكاً."}
+   ]},
+  {id:"t3",title:"3. المذكرة البيداغوجية وهيكلة الحصة",tag:"التحضير والقسم",
+   def:"خطة العمل اليومية للأستاذ وتتضمن الديباجة والوضعيات التعليمية الأربع.",
+   role:"تضبط الزمن وتفعّل دور المتعلم داخل القسم.",
+   ex:"وضعية انطلاق + وضعية بناء التعلمات + وضعية مهيكلة + وضعية إدماج.",
+   tip:"كل وضعية كاملة تتكون من: سياق + سند + تعليمة.",
+   ch:[
+     {id:"t3a",title:"وضعية الانطلاق (الاستكشافية)",tag:"5-10 دقائق",
+      def:"موقف محفز أو تساؤل يثير التمثلات القبلية ويطرح إشكالية الدرس.",
+      role:"في بداية الحصة لشد الانتباه والربط بالدرس السابق.",
+      ex:"لماذا حرّم الإسلام الربا وأباح البيع رغم تحقق الربح في كليهما؟",
+      tip:"لا تبدأ الحصة بسرد الدرس مباشرة قبل إثارة الإشكال."},
+     {id:"t3b",title:"وضعية بناء التعلمات",tag:"30-35 دقيقة",
+      def:"قلب الحصة: تلاوة السند الشرعي، شرح المفردات، التحليل بالأفواج، واستنباط العناصر.",
+      role:"المرحلة الأكبر زمناً لبناء الموارد بمشاركة التلاميذ.",
+      ex:"تلاوة سورة الأنعام، شرح المفردات، استخراج دلائل القدرة ومناقشتها.",
+      tip:"الأستاذ موجّه ومنشط، والمتعلم باحث ومستنبط."},
+     {id:"t3c",title:"الوضعية المهيكلة (الأثر الكتابي)",tag:"10 دقائق",
+      def:"تنظيم المعارف المكتسبة في خلاصة مركزة أو مخطط مع تقويم تكويني فوري.",
+      role:"تثبيت التعلمات وضبط الملخص في كراس التلميذ.",
+      ex:"جدول مقارنة بين الإجماع والقياس والمصالح المرسلة.",
+      tip:"يفضّل إشراك التلاميذ في صياغة الخلاصة قبل تدوينها."},
+     {id:"t3d",title:"وضعية الإدماج (الوضعية الإدماجية)",tag:"نهاية الوحدة",
+      def:"وضعية مركبة جديدة تجند موارد من عدة دروس لحل إشكال واقعي.",
+      role:"تُخصص لها حصة ختامية وتمثل الجزء الثاني من الاختبار (08ن).",
+      ex:"مناقشة شبهة حول الحدود الشرعية بتوظيف العقيدة والمقاصد.",
+      tip:"تقيس الكفاءة الحقيقية لا الحفظ الآلي."}
+   ]},
+  {id:"t4",title:"4. التقويم البيداغوجي والمعالجة",tag:"القياس والدعم",
+   def:"سيرورة جمع المعطيات حول تعلمات التلاميذ للحكم عليها وتصحيح المسار.",
+   role:"يرافق السنة الدراسية قبل الدرس وأثناءه وبعده.",
+   ex:"تشخيصي (بداية السنة) ← تكويني (أثناء الدرس) ← تحصيلي (الفرض والاختبار).",
+   tip:"التقويم أداة لتحسين التعلم لا للعقاب.",
+   ch:[
+     {id:"t4a",title:"منهجية استخراج الأحكام والفوائد",tag:"مهارة اختبارية",
+      def:"الحكم يصف فعل المكلف (وجوب، تحريم...)، والفائدة تستخلص عبرة أو توجيهاً تربوياً.",
+      role:"سؤال أساسي في الجزء الأول من فروض واختبارات الثانوي.",
+      ex:"الحكم: وجوب العدل. الفائدة: بيان أثر التقوى في تفريج الكروب.",
+      tip:"الحكم يبدأ بحكم تكليفي، والفائدة تبدأ بمصدر صريح."},
+     {id:"t4b",title:"المعالجة البيداغوجية",tag:"بعد التصحيح",
+      def:"أنشطة تصحيحية تستهدف الفجوات والأخطاء المشخصة بعد الفرض أو التشخيصي.",
+      role:"تُبرمج في حصة تصحيح الفرض لتجاوز التعثرات الشائعة.",
+      ex:"ورشة تدريب على صياغة التعليل الشرعي للمقاصد.",
+      tip:"المعالجة تعتمد طريقة بديلة وليس تكرار نفس الشرح."}
+   ]}
+];
+
+const diffData=[
+  {t:"التقييم 🆚 التقويم 🆚 القياس",r:"القياس رقم ← التقييم حكم ← التقويم حكم + إصلاح وعلاج.",
+   it:[{c:"",l:"القياس",x:"إعطاء قيمة رقمية لأداء التلميذ دون حكم، مثل: حصل على 14/20."},
+       {c:"b",l:"التقييم",x:"إصدار حكم وصفي على المستوى (ممتاز، مقبول) دون خطة علاج."},
+       {c:"c",l:"التقويم",x:"أشمل: قياس + تقييم + خطة علاجية لتصحيح التعثر وتعديل المسار."}]},
+  {t:"المنهاج 🆚 البرنامج 🆚 المنهجية",r:"المنهاج خطة شاملة، البرنامج قائمة دروس، والمنهجية طريقة التنفيذ.",
+   it:[{c:"",l:"المنهاج",x:"وثيقة شاملة تضم الغايات، الكفاءات، المحتويات، الطرائق، والتقويم."},
+       {c:"b",l:"البرنامج",x:"قائمة الدروس والموضوعات المعرفية المقررة في السنة فقط."},
+       {c:"c",l:"المنهجية",x:"الخطوات المنظمة المتبعة في التدريس أو في إجابة التلميذ."}]},
+  {t:"الفرض 🆚 الاختبار 🆚 الامتحان",r:"الفرض محطة جزئية، الاختبار فصلي شامل، والامتحان شهادة وطنية.",
+   it:[{c:"",l:"الفرض المحروس",x:"تقويم جزئي قصير (1 سا) خلال الفصل لقياس وحدات محددة وتشخيص الخلل."},
+       {c:"b",l:"الاختبار الفصلي",x:"تقويم تحصيلي شامل لوحدات الفصل يحاكي الامتحان الرسمي."},
+       {c:"c",l:"الامتحان الرسمي",x:"تقويم وطني إشهادي في نهاية الطور (البكالوريا) يمنح شهادة."}]},
+  {t:"الكفاءة 🆚 الهدف التعلمي 🆚 الإجرائي",r:"الكفاءة غاية مركبة، والهدف التعلمي خطوة بنائية ضمنها.",
+   it:[{c:"",l:"الكفاءة",x:"تجنيد مجموعة موارد مندمجة لحل وضعية مشكلة جديدة ومركبة."},
+       {c:"b",l:"الهدف التعلمي",x:"ممارسة قدرة على محتوى واحد في الحصة لبناء مورد جزئي."},
+       {c:"c",l:"الهدف الإجرائي",x:"أداء ظاهر محدد بشرط ومعيار يخص نشاطاً واحداً."}]},
+  {t:"الوضعية التطبيقية 🆚 الإدماجية",r:"التطبيقية لقاعدة واحدة، والإدماجية تدمج عدة دروس في مشكلة جديدة.",
+   it:[{c:"",l:"التطبيقية",x:"تدريب مباشر على درس واحد مألوف فور شرحه لترسيخ القاعدة."},
+       {c:"b",l:"الإدماجية",x:"موقف جديد مركب يجند موارد عدة دروس معاً لحل إشكال واقعي."}]},
+  {t:"الحكم الشرعي 🆚 الفائدة التربوية",r:"الحكم يصف فعل المكلف (وجوب/تحريم)، والفائدة عبرة وتوجيه.",
+   it:[{c:"",l:"الحكم الشرعي",x:"خطاب الشارع في أفعال المكلفين: وجوب، تحريم، ندب، كراهة، إباحة."},
+       {c:"b",l:"الفائدة",x:"قيمة أو توجيه أو عبرة مستخلصة من النص دون صيغة التكليف."}]},
+  {t:"المعيار 🆚 المؤشر",r:"المعيار صفة عامة في الشبكة، والمؤشر علامة ملموسة جزئية.",
+   it:[{c:"",l:"المعيار",x:"صفة نوعية منتظرة في المنتوج (الوجاهة، الانسجام، سلامة الأدوات)."},
+       {c:"b",l:"المؤشر",x:"علامة قابلة للملاحظة تدل على تحقق المعيار في سؤال محدد."}]},
+  {t:"القدرة 🆚 المهارة",r:"القدرة استعداد ذهني عام، والمهارة أداء عملي متقن ومحدد.",
+   it:[{c:"",l:"القدرة",x:"نشاط ذهني مستعرض عام (التحليل، المقارنة، الاستنتاج)."},
+       {c:"b",l:"المهارة",x:"إتقان عملي دقيق وسريع لمهمة محددة (التجويد، الاستنباط)."}]}
+];
+
+const blooms=[
+  {lv:"1. التذكر والمعرفة",col:"#065f46",rat:"20% (4 نقاط)",d:"استرجاع التعريفات والحقائق والنصوص الشرعية كما دُرست.",
+   v:["يعرّف","يذكر","يعدّد","يسمّي","يحدد"],ex:"عرّف المقاصد لغة واصطلاحاً، واذكر أقسامها الثلاثة."},
+  {lv:"2. الفهم والاستيعاب",col:"#d97706",rat:"25% (5 نقاط)",d:"إدراك معنى النص الشرعي وتفسيره وتعليله وتصنيفه.",
+   v:["يشرح","يفسّر","يعلّل","يوضح","يصنّف"],ex:"اشرح المقطع القرآني، وبيّن سبب تحريم التبني وتشريع الكفالة."},
+  {lv:"3. التطبيق",col:"#0d9488",rat:"20% (4 نقاط)",d:"توظيف الأحكام والقواعد الشرعية في معاملات ومواقف جديدة.",
+   v:["يطبق","يوظف","يمثل","ينزّل الحكم","يحكم على"],ex:"بيّن الحكم الشرعي في بيع العملات نسيئة مع التعليل."},
+  {lv:"4. التحليل",col:"#2563eb",rat:"15% (3 نقاط)",d:"تفكيك السند لاستخراج الأحكام والفوائد والمقارنة وكشف العلاقات.",
+   v:["يحلل","يستنبط","يستخرج","يقارن","يربط"],ex:"استخرج حكمين وفائدتين، وقارن بين الكفالة والتبني."},
+  {lv:"5. التركيب",col:"#9333ea",rat:"10% (إدماج)",d:"التوليف بين موارد عدة دروس لبناء خطة أو خطاب متماسك.",
+   v:["يركّب","يصمم","يقترح","يبني","يدمج"],ex:"اقترح خطة علاجية للانحراف تدمج بين العقيدة والعبادات والحدود."},
+  {lv:"6. التقويم وإصدار الحكم",col:"#be123c",rat:"10% (إدماج)",d:"نقد الشبهات وإبداء الرأي المعلل بالأدلة الشرعية والعقلية.",
+   v:["ينقد","يدحض","يفنّد","يناقش","يبدي رأيه المعلل"],ex:"ناقش شبهة 'الإسلام يعارض حرية العقل' وأبطلها بالأدلة."}
+];
+
+// MODELS TEMPLATES (1AS, 2AS, 3AS)
+function mkMemo(m){
+  const s=document.getElementById('mSchool').value, t=document.getElementById('mTeach').value, y=document.getElementById('mYear').value;
+  return `
+  <div class="dhead">
+    <div style="font-size:.82rem">الجمهورية الجزائرية الديمقراطية الشعبية • وزارة التربية الوطنية</div>
+    <h2 style="color:#065f46;margin:4px 0">مذكرة بيداغوجية في مادة العلوم الإسلامية</h2>
+    <div style="font-size:.82rem">${esc(s)} | ${esc(t)} | السنة الدراسية: ${esc(y)}</div>
+  </div>
+  <div class="dmeta">
+    <div><strong>المستوى:</strong> ${m.lvl}</div>
+    <div><strong>الميدان:</strong> ${m.dom}</div>
+    <div><strong>الوحدة التعلمية:</strong> ${m.unit}</div>
+    <div><strong>المدة الزمنية:</strong> ${m.dur}</div>
+    <div><strong>الكفاءة المرحلية:</strong> ${m.kaf}</div>
+    <div><strong>الهدف التعلمي:</strong> ${m.obj}</div>
+    <div><strong>المكتسبات القبلية:</strong> ${m.pre}</div>
+    <div><strong>الوسائل والسندات:</strong> الكتاب المدرسي، السبورة، ${m.tools}</div>
+  </div>
+  <div class="sanad">📖 السند المعتمد: ${m.sanad}</div>
+  <table class="tbl">
+    <thead><tr><th style="width:15%">الوضعية</th><th style="width:10%">الزمن</th><th style="width:37%">سيرورة الفعل التعليمي - التعلمي (الأستاذ / المتعلم)</th><th style="width:38%">الأثر الكتابي والمؤشرات</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1. الانطلاق</strong><br>(استكشافية)</td><td>10 د</td><td>${m.p1}</td><td>${m.o1}</td></tr>
+      <tr><td><strong>2. بناء التعلمات</strong><br>(الاستنباط)</td><td>35 د</td><td>${m.p2}</td><td>${m.o2}</td></tr>
+      <tr><td><strong>3. المهيكلة</strong><br>(التثبيت)</td><td>10 د</td><td>${m.p3}</td><td>${m.o3}</td></tr>
+      <tr><td><strong>4. الإدماج</strong><br>(التقويم)</td><td>05 د</td><td>${m.p4}</td><td>${m.o4}</td></tr>
+    </tbody>
+  </table>`;
+}
+
+function mkExam(e){
+  const s=document.getElementById('mSchool').value, t=document.getElementById('mTeach').value, y=document.getElementById('mYear').value;
+  return `
+  <div class="dhead">
+    <div style="font-size:.82rem">${esc(s)} • السنة الدراسية: ${esc(y)} • ${esc(t)}</div>
+    <h2 style="color:#065f46;margin:4px 0">${e.title}</h2>
+    <div style="font-size:.83rem"><strong>المستوى:</strong> ${e.lvl} | <strong>المدة:</strong> ${e.dur} | <strong>العلامة:</strong> 20 نقطة</div>
+  </div>
+  <h3 style="color:#065f46;margin:8px 0 4px">الجزء الأول: (12 نقطة)</h3>
+  <div class="sanad">${e.s1}</div>
+  <p style="font-weight:700;margin:5px 0">المطلوب (متدرج وفق هرم بلوم):</p>
+  <ol style="padding-right:20px;margin-bottom:10px">${e.q1.map(q=>`<li style="margin-bottom:4px">${q}</li>`).join('')}</ol>
+  <h3 style="color:#b45309;margin:10px 0 4px">الجزء الثاني: الوضعية الإدماجية (08 نقاط)</h3>
+  <div class="sanad" style="background:#f8fafc;border-color:#065f46">${e.s2}</div>
+  <ol style="padding-right:20px;margin-bottom:10px">${e.q2.map(q=>`<li style="margin-bottom:4px">${q}</li>`).join('')}</ol>
+  <div style="background:#f0fdf4;border:1px dashed #059669;padding:8px 10px;border-radius:8px;font-size:.82rem">
+    <strong>📊 شبكة التوازن وفق هرم بلوم:</strong> ${e.bloomMap}
+  </div>`;
+}
+
+const modelsDB={
+  "1as":{
+    memo:{
+      lvl:"السنة الأولى ثانوي (جذع مشترك علوم وآداب)",
+      dom:"القرآن الكريم والحديث النبوي الشريف",
+      unit:"من دلائل قدرة الله جل جلاله (سورة الأنعام: 95-99)",
+      dur:"ساعة واحدة (1 سا)",
+      kaf:"تلاوة النص القرآني تلاوة سليمة، وفهمه واستنباط دلائل القدرة الإلهية وأحكامه.",
+      obj:"أن يستنبط المتعلم مظاهر قدرة الله في الكون من الآيات، ويستخرج الأحكام والفوائد.",
+      pre:"مفهوم الإيمان بالله، وأركان الإيمان الستة.",
+      tools:"المصحف الشريف، بطاقات عمل للأفواج.",
+      sanad:"قال الله تعالى: ﴿إِنَّ اللَّهَ فَالِقُ الْحَبِّ وَالنَّوَىٰ يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَمُخْرِجُ الْمَيِّتِ مِنَ الْحَيِّ ذَٰلِكُمُ اللَّهُ فَأَنَّىٰ تُؤْفَكُونَ﴾ [الأنعام: 95].",
+      p1:"طرح سؤال مثير للتفكير: كيف تتحول حبة قمح يابسة في التراب إلى سنبلة خضراء، ومن يُنظم تعاقب الليل والنهار؟ ثم الربط بسورة الأنعام.",
+      o1:"<b>الإشكالية:</b> ما هي دلائل قدرة الله في الكون وما واجبنا تجاهها؟",
+      p2:"1. قراءة نموذجية للأستاذ ثم فردية للتلاميذ مع مراعاة أحكام النون الساكنة.<br>2. شرح المفردات (فالق الحب، تؤفكون، الإصباح، مستقر ومستودع).<br>3. تفويج التلاميذ لاستنباط الدلائل الكونية: أ) في النبات (إخراج الحي من الميت)، ب) في الفلك (الليل والنهار والشمس والقمر والنجوم)، ج) في خلق البشر والإنبات بالمطر.",
+      o2:"<b>المعنى الإجمالي:</b> إبراز وحدانية الله وعظيم قدرته.<br><b>دلائل القدرة:</b> 1. إنبات الزرع. 2. تعاقب الليل والنهار وحساب الفلك. 3. خلق النجوم للاهتداء. 4. خلق الإنسان من نفس واحدة. 5. إنزال المطر وإخراج الثمار.",
+      p3:"توجيه التلاميذ لاستخراج حكمين شرعيين وفائدتين مع ضبط الصياغة المنهجية، ثم تصحيح جماعي على السبورة.",
+      o3:"<b>الأحكام:</b> وجوب توحيد الله، وجوب التأمل في المخلوقات.<br><b>الفوائد:</b> عظمة الخالق، أهمية العلم في تسخير الكون.",
+      p4:"وضعية ختامية: كيف توظف هذه الآيات في الرد على من ينسب نظام الكون للصدفة؟",
+      o4:"<b>مؤشر التحقق:</b> يربط المتعلم دقة النظام الكوني بالخالق الحكيم."
+    },
+    exam:{
+      title:"فرض محروس / اختبار الفصل الأول في العلوم الإسلامية",
+      lvl:"1 ثانوي (جذع مشترك علوم وآداب)", dur:"ساعة واحدة",
+      s1:"السند: عن أبي هريرة رضي الله عنه قال: قال رسول الله ﷺ: «مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا، سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ...» [رواه مسلم].",
+      q1:[
+        "<b>[تذكر - 2ن]:</b> عرّف براوي الحديث الصحابي الجليل (الاسم، الفضائل، عدد مروياته، وفاته).",
+        "<b>[فهم - 2.5ن]:</b> اشرح المقطع الأول من الحديث، وبيّن مكانة العلم والعلماء في الإسلام.",
+        "<b>[فهم - 2.5ن]:</b> حدّد موقف الإسلام من التفكير الخرافي والتعصب، معللاً إجابتك.",
+        "<b>[تطبيق - 2ن]:</b> مثّل بمظهرين من آداب طالب العلم في المؤسسة التربوية.",
+        "<b>[تحليل - 3ن]:</b> استخرج من الحديث حكمين شرعيين وفائدتين تربويتين."
+      ],
+      s2:"السياق: دار نقاش بين زميلين؛ الأول يرى أن طلب العلم الشرعي فقط هو المقصود في الحديث، بينما يرى الثاني أن العلوم التجريبية والتقنية لا قيمة لها دينياً. <br>التعليمة: بالاعتماد على ما درست في وحدتي (قيمة العلم) و(دلائل قدرة الله):",
+      q2:[
+        "<b>[تحليل - 3ن]:</b> قارن بين نظرة الإسلام للعلم ونظرة الفلسفات المادية الضيقة.",
+        "<b>[تركيب + تقويم - 5ن]:</b> حرّر فقرة منهجية تفنّد فيها الرأي الخاطئ وتثبت تكامل العلوم الشرعية والكونية في تعمير الأرض ومعرفة الله."
+      ],
+      bloomMap:"التذكر (2ن) + الفهم (5ن) + التطبيق (2ن) + التحليل (6ن) + التركيب والتقويم (5ن) = 20/20"
+    }
+  },
+  "2as":{
+    memo:{
+      lvl:"السنة الثانية ثانوي (جميع الشعب)",
+      dom:"الفقه وأصوله",
+      unit:"خصائص الشريعة الإسلامية",
+      dur:"ساعة واحدة (1 سا)",
+      kaf:"توظيف خصائص الشريعة الإسلامية في إبراز صلاحيتها لكل زمان ومكان.",
+      obj:"أن يستنبط المتعلم خصائص الشريعة الإسلامية، ويميز أثرها في حياة الفرد والمجتمع.",
+      pre:"مفهوم القرآن والسنة كمصدرين للتشريع الإسلامي.",
+      tools:"بطاقات نصوص شرعية، السبورة، مخطط تشجيري.",
+      sanad:"قال تعالى: ﴿وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ﴾ [الحج: 78]، وقال: ﴿وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ﴾ [الأنبياء: 107].",
+      p1:"مناقشة إشكالية: يتساءل البعض كيف لشريعة نزلت قبل 14 قرناً أن تعالج قضايا التجارة الإلكترونية والطب الحديث؟",
+      o1:"<b>الإشكالية:</b> ما الخصائص التي جعلت الشريعة الإسلامية صالحة لكل زمان ومكان؟",
+      p2:"1. استخراج تعريف الشريعة لغة واصطلاحاً عبر الحوار الموجه.<br>2. تحليل النصوص في أفواج لاستنتاج الخصائص الخمس: الربانية، الشمولية، العالمية، الوسطية (اليسر ورفع الحرج)، والمرونة (الجمع بين الثبات والتطور).<br>3. التمثيل لكل خاصية بأمثلة فقهية حية (التيمم، القصر في السفر، العقود المستحدثة).",
+      o2:"<b>تعريف الشريعة:</b> ما شرعه الله لعباده من عقائد وعبادات وأخلاق ومعاملات.<br><b>الخصائص:</b> 1. الربانية (المصدر والغاية). 2. العالمية. 3. الشمولية. 4. الوسطية واليسر. 5. الثبات والمرونة.",
+      p3:"إنجاز مخطط تشجيري يلخص الخصائص والتمييز بين الثابت والمتغير في الشريعة.",
+      o3:"<b>آثارها:</b> تحقيق الأمن النفسي، حفظ المصالح، وتيسير التكليف.",
+      p4:"وضعية تقويمية: صنّف الرخص الشرعية الآتية وفق الخصائص المناسبة (الفطر للمريض، تحريم الخمر في كل عصر).",
+      o4:"<b>المؤشر:</b> يعلل التلميذ ارتباط المثال بالخاصية تعليلاً سليماً."
+    },
+    exam:{
+      title:"اختبار الفصل الأول في مادة العلوم الإسلامية",
+      lvl:"2 ثانوي (جميع الشعب)", dur:"ساعة ونصف",
+      s1:"السند: قال الله تعالى: ﴿يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ﴾ [البقرة: 185]، وقال: ﴿إِنَّ هَٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ﴾ [الإسراء: 9].",
+      q1:[
+        "<b>[تذكر - 2ن]:</b> عرّف الشريعة الإسلامية اصطلاحاً، واذكر خاصيتين غير واردتين في السند.",
+        "<b>[فهم - 3ن]:</b> اشرح معنى 'الربانية' و'المرونة' في الشريعة الإسلامية.",
+        "<b>[فهم - 2ن]:</b> بيّن الفرق بين الثابت والمتغير في الأحكام الشرعية مع التمثيل.",
+        "<b>[تطبيق - 2ن]:</b> مثّل لتطبيق خاصية 'اليسر ورفع الحرج' في العبادات (الصلاة والصيام).",
+        "<b>[تحليل - 3ن]:</b> استخرج من الآيتين حكمين وفائدتين، ثم استنتج الخاصية البارزة في كل آية."
+      ],
+      s2:"السياق: يزعم بعض المتأثرين بالفكر التغريبي أن أحكام الشريعة الإسلامية جامدة لا تواكب التطورات الاقتصادية والطبية المعاصرة، وأنها خاصة بالعرب دون غيرهم. <br>التعليمة: استثمر مكتسباتك في وحدة (خصائص الشريعة) للرد المنهجي:",
+      q2:[
+        "<b>[تحليل - 3ن]:</b> حدّد الخاصيتين اللتين تنقضان هذا الزعم مع شرح وجه الدلالة.",
+        "<b>[تركيب + تقويم - 5ن]:</b> دافع عن صلاحية الشريعة لكل زمان ومكان في فقرة مترابطة مدعمة بأدلة شرعية وأمثلة واقعية معاصرة."
+      ],
+      bloomMap:"التذكر (2ن) + الفهم (5ن) + التطبيق (2ن) + التحليل (6ن) + التركيب والتقويم (5ن) = 20/20"
+    }
+  },
+  "3as":{
+    memo:{
+      lvl:"السنة الثالثة ثانوي (بكالوريا - جميع الشعب)",
+      dom:"الفقه وأصوله",
+      unit:"مقاصد الشريعة الإسلامية",
+      dur:"ساعة واحدة (1 سا)",
+      kaf:"التمكن من توظيف مقاصد الشريعة في فهم النصوص وإيجاد حلول للمشكلات المعاصرة.",
+      obj:"أن يحدد المتعلم أقسام المقاصد الشرعية ويرتبها، ويطبق قاعدة الترجيح عند التعارض.",
+      pre:"مصادر التشريع الإسلامي (القرآن، السنة، الإجماع، القياس، المصالح المرسلة).",
+      tools:"الكتاب المدرسي، مخطط هرمي للمقاصد، أمثلة قضائية وطبية معاصرة.",
+      sanad:"قال الله تعالى: ﴿وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ يَا أُولِي الْأَلْبَابِ لَعَلَّكُمْ تَتَّقُونَ﴾ [البقرة: 179].",
+      p1:"طرح وضعية استكشافية: إذا اضطر مريض صائم في رمضان لتناول دواء منقذ للحياة، هل يفطر أم يصوم؟ ولماذا؟ التوصل لمفهوم الحكمة والمقصد.",
+      o1:"<b>الإشكالية:</b> ما الغايات الكبرى التي جاءت الشريعة لتحقيقها، وكيف تترتب عند التعارض؟",
+      p2:"1. ضبط تعريف مقاصد الشريعة والمقصد العام (جلب المصالح ودرء المفاسد).<br>2. تحليل أقسام المقاصد بالأفواج: أ) الضروريات (الكليات الخمس: الدين، النفس، العقل، النسل، المال)، ب) الحاجيات (التخفيف ورفع الحرج)، ج) التحسينيات (مكارم الأخلاق).<br>3. دراسة أمثلة تطبيقية للترتيب بين الكليات (تقديم الدين على النفس في الجهاد، وتقديم النفس على المال، وتقديم الضروري على الحاجي).",
+      o2:"<b>التعريف:</b> الغايات والأهداف التي قصدها الشارع لتحقيق سعادة الإنسان.<br><b>الأقسام:</b> 1. الضروريات (الدين، النفس، العقل، النسل، المال). 2. الحاجيات (الرخص والعقود). 3. التحسينيات (الآداب والسنن).<br><b>الترتيب:</b> يراعى التدرج من الأهم إلى المهم عند التعارض.",
+      p3:"إنجاز مخطط هرمي للمقاصد + تطبيق: ربط تحريم المخدرات والربا والزنا بالكليات الخمس.",
+      o3:"<b>الأهمية:</b> الترجيح عند تعارض المصالح، فهم النصوص، والاجتهاد في النوازل.",
+      p4:"إدماج سريع: استخرج المقصد الشرعي ومرتبته في: (تشريع الكفالة، إباحة التيمم، تحريم السرقة).",
+      o4:"<b>المؤشر:</b> يصنف الأمثلة بدقة (النسل/تحسيني أو حاجي، الدين/حاجي، المال/ضروري)."
+    },
+    exam:{
+      title:"اختبار تجريبي وفق منهجية البكالوريا (هرم بلوم)",
+      lvl:"3 ثانوي - بكالوريا (جميع الشعب)", dur:"ساعتان ونصف",
+      s1:"السند: عن النعمان بن بشير رضي الله عنه قال: سمعت رسول الله ﷺ يقول: «إِنَّ الْحَلَالَ بَيِّنٌ، وَإِنَّ الْحَرَامَ بَيِّنٌ، وَبَيْنَهُمَا مُشْتَبِهَاتٌ... أَلَا وَإِنَّ فِي الْجَسَدِ مُضْغَةً إِذَا صَلَحَتْ صَلَحَ الْجَسَدُ كُلُّهُ... أَلَا وَهِيَ الْقَلْبُ» [متفق عليه].",
+      q1:[
+        "<b>[تذكر - 2ن]:</b> عرّف العقيدة الإسلامية اصطلاحاً، واذكر ثلاث وسائل من وسائل القرآن في تثبيتها.",
+        "<b>[فهم - 3ن]:</b> بيّن علاقة صلاح القلب المذكور في الحديث بآثار العقيدة على الفرد والمجتمع.",
+        "<b>[تطبيق - 3ن]:</b> طبّق منهج التعامل مع المشتبهات لحفظ الكليات الخمس في: (التعامل بقروض بنكية ربوية بحجة الحاجة، وترويج الإشاعات الرقمية).",
+        "<b>[تحليل - 2ن]:</b> قارن بين مقاصد الشريعة في مرتبة 'الضروريات' ومرتبة 'الحاجيات' مع مثال لكل منهما.",
+        "<b>[تحليل - 2ن]:</b> استخرج من الحديث الشريف حكمين شرعيين وفائدتين."
+      ],
+      s2:"السياق: لاحظت انتشار ظاهرة اللجوء إلى السحر والشعوذة والربا بحجة حل الأزمات الاجتماعية، مع التذرع بأن ذلك يدخل في الحرية الشخصية.<br>التعليمة: وظّف مكتسباتك في وحدات (العقيدة، المقاصد، الحرية الشخصية، والربا):",
+      q2:[
+        "<b>[تحليل - 3ن]:</b> صنّف هذه التصرفات وفق الضروريات الخمس التي تهدمها، مبيّناً علة تحريم الربا.",
+        "<b>[تركيب + تقويم - 5ن]:</b> فنّد دعوى 'الحرية الشخصية المطلقة' محدداً ضوابط الحرية في الإسلام، ثم اقترح حلاً عملياً يدمج البعد العقدي والمقاصدي لمعالجة الظاهرة."
+      ],
+      bloomMap:"التذكر (2ن) + الفهم (3ن) + التطبيق (3ن) + التحليل (7ن) + التركيب والتقويم (5ن) = 20/20"
+    }
+  }
+};
+
+// STATE & HELPERS
+let selId="t3b", actCat="all", qStr="", draft=[], curLvl="1as", curTyp="memo";
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const hi=t=>{const s=esc(t);if(!qStr)return s;return s.replace(new RegExp(`(${qStr.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi'),'<mark>$1</mark>');};
+const matchT=n=>{if(!qStr)return true;if([n.title,n.tag,n.def,n.role,n.ex,n.tip].join(' ').toLowerCase().includes(qStr.toLowerCase()))return true;return n.ch?n.ch.some(matchT):false;};
+const findT=(arr,id)=>{for(const n of arr){if(n.id===id)return n;if(n.ch){const f=findT(n.ch,id);if(f)return f;}}return null;};
+
+function renderFilters(){
+  document.getElementById('treeFilters').innerHTML=`<button class="pill ${actCat==='all'?'active':''}" onclick="actCat='all';renderFilters();renderTree()">الكل</button>`+
+    treeData.map(c=>`<button class="pill ${actCat===c.id?'active':''}" onclick="actCat='${c.id}';renderFilters();renderTree()">${esc(c.title.replace(/^\d+\.\s*/,''))}</button>`).join('');
+}
+
+function mkNode(n,lvl=0,exp=false){
+  const li=document.createElement('li');li.className='tli';
+  const row=document.createElement('div');row.className=`ncard ${lvl===0?'l0':''} ${selId===n.id?'sel':''}`;
+  const has=n.ch&&n.ch.length;let ul=null;
+  if(has){
+    const b=document.createElement('button');b.className='tbtn';const o=exp||lvl===0;b.textContent=o?'−':'+';
+    b.onclick=e=>{e.stopPropagation();const c=ul.classList.toggle('col');b.textContent=c?'+':'−';};
+    row.appendChild(b);
+  }else{const d=document.createElement('span');d.className='dot';row.appendChild(d);}
+  const m=document.createElement('div');m.className='nmeta';
+  m.innerHTML=`<span class="ntit">${hi(n.title)}</span><span class="ntag">${esc(n.tag)}</span>`;
+  row.appendChild(m);row.onclick=()=>selTree(n.id);li.appendChild(row);
+  if(has){
+    ul=document.createElement('ul');ul.className=`tsub ${(exp||lvl===0)?'':'col'}`;
+    n.ch.forEach(c=>{if(matchT(c))ul.appendChild(mkNode(c,lvl+1,Boolean(qStr)));});
+    li.appendChild(ul);
+  }
+  return li;
+}
+
+function renderTree(fExp=null){
+  const r=document.getElementById('treeRoot');r.innerHTML='';
+  const list=treeData.filter(n=>(actCat==='all'||n.id===actCat)&&matchT(n));
+  if(!list.length){r.innerHTML=`<li style="padding:16px;color:var(--mut)">لا توجد نتائج مطابقة.</li>`;return;}
+  list.forEach(n=>{
+    const el=mkNode(n,0,fExp!==null?fExp:Boolean(qStr));
+    if(fExp===true){el.querySelectorAll('.tsub').forEach(u=>u.classList.remove('col'));el.querySelectorAll('.tbtn').forEach(b=>b.textContent='−');}
+    if(fExp===false){el.querySelectorAll('.tsub').forEach(u=>u.classList.add('col'));el.querySelectorAll('.tbtn').forEach(b=>b.textContent='+');}
+    r.appendChild(el);
+  });
+}
+
+function selTree(id){
+  selId=id;const n=findT(treeData,id);if(!n)return;
+  document.querySelectorAll('.ncard').forEach(c=>c.classList.remove('sel'));
+  document.querySelectorAll('.ntit').forEach(t=>{if(t.textContent===n.title)t.closest('.ncard').classList.add('sel');});
+  document.getElementById('inspBody').innerHTML=`
+    <div style="margin-bottom:10px">
+      <button class="mclose" onclick="document.getElementById('insp').classList.remove('open')">✕ إغلاق</button>
+      <span class="ntag">${esc(n.tag)}</span>
+      <h3 style="font-size:1.1rem;margin-top:5px;color:var(--pri)">${esc(n.title)}</h3>
+    </div>
+    <div class="ibox"><h4>📘 التعريف</h4><p>${esc(n.def)}</p></div>
+    <div class="ibox"><h4>📝 الموقع في المذكرة / القسم</h4><p>${esc(n.role)}</p></div>
+    <div class="ibox"><h4>🕌 مثال في العلوم الإسلامية</h4><p>${esc(n.ex)}</p></div>
+    <div class="ibox"><h4>💡 تنبيه منهجي</h4><p>${esc(n.tip)}</p></div>`;
+  if(window.innerWidth<=860)document.getElementById('insp').classList.add('open');
+}
+
+function renderDiffs(){
+  const g=document.getElementById('diffGrid');
+  const f=diffData.filter(d=>!qStr||(d.t+d.r+d.it.map(i=>i.l+i.x).join(' ')).toLowerCase().includes(qStr.toLowerCase()));
+  g.innerHTML=f.length?f.map(d=>`<div class="dcard"><h3>${hi(d.t)}</h3>${d.it.map(i=>`<div class="vsi ${i.c}"><strong>${hi(i.l)}:</strong> ${hi(i.x)}</div>`).join('')}<div class="vrule">🔑 ${hi(d.r)}</div></div>`).join(''):`<p style="color:var(--mut)">لا توجد فروقات مطابقة.</p>`;
+}
+
+function selBloom(i){
+  const b=blooms[i], c=document.getElementById('bloomCard');c.style.borderRightColor=b.col;
+  c.innerHTML=`<span class="ntag" style="margin-bottom:5px;display:inline-block">الوزن: ${esc(b.rat)}</span>
+    <h3 style="font-size:1.12rem;color:${b.col};margin-bottom:7px">${esc(b.lv)}</h3>
+    <div class="ibox"><h4>🎯 الوصف</h4><p>${esc(b.d)}</p></div>
+    <div class="ibox"><h4>⚡ الأفعال الإجرائية</h4><div>${b.v.map(x=>`<span class="vchip">${esc(x)}</span>`).join('')}</div></div>
+    <div class="ibox"><h4>🕌 مثال في العلوم الإسلامية</h4><p>${esc(b.ex)}</p></div>`;
+}
+
+function updVerbs(){
+  const i=Number(document.getElementById('bBloom').value);
+  document.getElementById('bVerb').innerHTML=blooms[i].v.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+}
+
+function addQ(){
+  const p=document.getElementById('bPart').value, i=Number(document.getElementById('bBloom').value),
+        v=document.getElementById('bVerb').value, c=document.getElementById('bCont').value.trim()||'مضمون الدرس',
+        pts=parseFloat(document.getElementById('bPts').value)||1;
+  draft.push({p,lv:blooms[i].lv,txt:`${v} ${c}`,pts});document.getElementById('bCont').value='';renderDraft();
+}
+
+function loadSampleQ(){
+  draft=[
+    {p:"الجزء الأول (12ن)",lv:"1. التذكر",txt:"عرّف براوي الحديث أو المصطلح الشرعي الوارد في السند",pts:2},
+    {p:"الجزء الأول (12ن)",lv:"2. الفهم",txt:"اشرح المقصود من المقطع الشرعي وعلل الحكم المذكور",pts:4},
+    {p:"الجزء الأول (12ن)",lv:"3. التطبيق",txt:"بيّن الحكم الشرعي في المعاملة المعاصرة مع التعليل",pts:3},
+    {p:"الجزء الأول (12ن)",lv:"4. التحليل",txt:"استخرج من السند حكمين شرعيين وفائدتين تربويتين",pts:3},
+    {p:"الجزء الثاني (08ن)",lv:"4. التحليل",txt:"استنبط المقصد الشرعي ومرتبته من الوضعية المطروحة",pts:3},
+    {p:"الجزء الثاني (08ن)",lv:"5. التركيب + 6. التقويم",txt:"ناقش الشبهة وأصدر حكماً شرعياً معللاً بأثره في حفظ المجتمع",pts:5}
+  ];renderDraft();
+}
+
+function renderDraft(){
+  const box=document.getElementById('draftList'), tot=draft.reduce((a,b)=>a+b.pts,0), b=document.getElementById('totBadge');
+  b.textContent=`المجموع: ${tot} / 20`;b.style.background=tot===20?'#d1fae5':'#fef3c7';b.style.color=tot===20?'#065f46':'#b45309';
+  box.innerHTML=draft.length?draft.map((q,i)=>`<div class="qitem"><div><span class="ntag">${esc(q.p)}</span> <span class="ntag" style="background:var(--soft);color:var(--pri)">${esc(q.lv)}</span><div style="margin-top:3px;font-weight:700">س${i+1}: ${esc(q.txt)} (${q.pts} ن)</div></div><button class="pill" onclick="draft.splice(${i},1);renderDraft()">حذف</button></div>`).join(''):`<p style="color:var(--mut);font-size:.86rem">أضف أسئلة أو اضغط "نموذج متوازن".</p>`;
+}
+
+function exportDraftWord(){
+  if(!draft.length)return alert("أضف أسئلة أولاً!");
+  const rows=draft.map((q,i)=>`<tr><td>س${i+1}</td><td>${esc(q.p)}</td><td>${esc(q.lv)}</td><td>${esc(q.txt)}</td><td>${q.pts} ن</td></tr>`).join('');
+  saveDoc(`<h2 style="text-align:center">مسودة بناء اختبار علوم إسلامية وفق هرم بلوم</h2><table><tr><th>رقم</th><th>الجزء</th><th>المستوى</th><th>السؤال</th><th>العلامة</th></tr>${rows}</table>`,'مسودة_اختبار_بلوم.doc');
+}
+
+function setModLvl(l,btn){
+  curLvl=l;document.querySelectorAll('#lvlPills .pill').forEach(p=>p.classList.remove('active'));btn.classList.add('active');renderModel();
+}
+function setModTyp(t,btn){
+  curTyp=t;document.querySelectorAll('#typPills .pill').forEach(p=>p.classList.remove('active'));btn.classList.add('active');renderModel();
+}
+
+function renderModel(){
+  const data=modelsDB[curLvl][curTyp];
+  document.getElementById('modPreview').innerHTML=curTyp==='memo'?mkMemo(data):mkExam(data);
+}
+
+function saveDoc(innerHtml,filename){
+  const html=`<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><style>body{font-family:Arial,Tahoma;direction:rtl;text-align:right;line-height:1.6}table{width:100%;border-collapse:collapse;margin-top:8px}th,td{border:1px solid #333;padding:6px;vertical-align:top}th{background:#ecfdf5;color:#065f46}.dhead{text-align:center;border-bottom:2px solid #065f46;padding-bottom:8px;margin-bottom:10px}.dmeta{background:#f8fafc;border:1px solid #999;padding:8px;margin-bottom:8px}.sanad{background:#fffbeb;border:1px solid #d97706;padding:8px;margin:8px 0;font-weight:bold}</style></head><body>${innerHtml}</body></html>`;
+  const blob=new Blob(['\ufeff',html],{type:'application/msword'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();
+}
+
+function dlWord(){
+  saveDoc(document.getElementById('modPreview').innerHTML, `${curLvl}_${curTyp}_علوم_إسلامية.doc`);
+}
+
+function dlPDF(){
+  document.getElementById('printSheet').innerHTML=`<div class="mprev">${document.getElementById('modPreview').innerHTML}</div>`;
+  window.print();
+}
+
+function swTab(name,btn){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.querySelectorAll('.nitem').forEach(n=>n.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+document.getElementById('gSearch').addEventListener('input',e=>{qStr=e.target.value.trim();renderTree();renderDiffs();});
+document.getElementById('darkBtn').onclick=e=>{const d=document.body.classList.toggle('dark');e.target.textContent=d?'☀️':'🌙';};
+
+renderFilters();renderTree();selTree('t3b');renderDiffs();selBloom(0);updVerbs();renderDraft();renderModel();
+</script>
+</body>
+</html>
